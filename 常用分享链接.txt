@@ -1,0 +1,98 @@
+
+<!--底部常用分享--分享到新浪微博、腾讯微博、QQ空间、百度、豆瓣网-->
+
+<div class="share">
+   <ul>
+         <li><em>分享：</em> </li>
+         <li><a href="javascript:tsina()"><img src="images/limg27_1.png"/></a></li>
+         <li><a href="javascript:tqq()"><img src="images/limg27_2.png"/></a></li>
+         <li><a href="javascript:qzone()"><img src="images/limg27_3.png"/></a></li>
+         <li><a href="javascript:bdhome()"><img src="images/limg27_4.png"/></a></li>
+         <li><a href="javascript:douban()"><img src="images/limg27_5.png"/></a></li>
+   </ul> 
+</div>
+
+
+<!--分享-->
+<div class="bdsharebuttonbox" style="display:none;">
+<a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina" id="tsina"></a>
+<a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq" id="tqq"></a>
+<a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone" id="qzone"></a>
+<a title="分享到百度" href="#" class="bds_bdome" data-cmd="bdhome" id="bdhome"></a>
+<a title="分享到豆瓣网" href="#" class="bds_douban" data-cmd="douban" id="douban"></a>
+</div>
+<script>
+       window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+</script>
+<script type="text/javascript">
+	   function tsina() { document.getElementById("tsina").click(); }
+	   function tqq() { document.getElementById("tqq").click(); } 
+	   function qzone() { document.getElementById("qzone").click(); }
+	   function bdhome() { document.getElementById("bdhome").click(); }
+	   function douban() { document.getElementById("douban").click(); } 
+</script>
+<!--分享-->
+
+
+<!--新闻详情页常用分享-->
+<div class="share">
+      <div class="bshare-custom"><a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到人人网" class="bshare-renren"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="分享到网易微博" class="bshare-neteasemb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count">0</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+</div>
+
+
+<!--右侧悬浮框常用分享-->
+<div class="sideBarShare">
+      <h2>分享到</h2>
+      <ul>
+        	<li><a href="javascript:copy()"><img src="/images/nimg16_1.png" />复制网址</a></li>
+                <li><a href="javascript:mail()"><img src="/images/nimg16_2.png" />邮件</a></li>
+                <li><a href="javascript:qzone()"><img src="/images/nimg16_3.png" />QQ空间</a></li>
+                <li><a href="javascript:tsina()"><img src="/images/nimg16_4.png" />新浪微博</a></li>
+                <li><a href="javascript:tqq()"><img src="/images/nimg16_5.png" />腾讯微博</a></li>
+                <li><a href="javascript:weixin()"><img src="/images/nimg16_6.png" />微信</a></li>
+                <li><a href="javascript:renren()"><img src="/images/nimg16_7.png" />人人网</a></li>
+                <li><a href="javascript:tsohu()"><img src="/images/nimg16_10.png" />搜狐微博</a></li>
+                <li><a href="javascript:sqq()"><img src="/images/nimg16_11.png" />QQ好友</a></li>
+                <li><a href="javascript:kaixin001()"><img src="/images/nimg16_12.png" />开心网</a></li>
+                <li><a href="javascript:fx()"><img src="/images/nimg16_13.png" />飞信</a></li>
+                <li><a href="javascript:douban()"><img src="/images/nimg16_14.png" />豆瓣</a></li>
+                <li><a href="javascript:mshare()"><img src="/images/nimg16_15.png" />一键分享</a></li>
+                <li><a href="#"><img src="/images/nimg16_16.png" />更多</a></li>
+        </ul>
+</div>
+
+<div class="bdsharebuttonbox" style="display:none;">
+<a href="#" class="bds_more" data-cmd="more"></a>
+<a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy" id="copy"></a>
+<a title="分享到邮件分享" href="#" class="bds_mail" data-cmd="mail" id="mail"></a>
+<a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone" id="qzone"></a>
+<a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina" id="tsina"></a>
+<a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq" id="tqq"></a>
+<a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin" id="weixin"></a>
+<a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren" id="renren"></a>
+<a title="分享到搜狐微博" href="#" class="bds_tsohu" data-cmd="tsohu" id="tsohu"></a>
+<a title="分享到QQ好友" href="#" class="bds_sqq" data-cmd="sqq" id="sqq"></a>
+<a title="分享到开心网" href="#" class="bds_kaixin001" data-cmd="kaixin001" id="kaixin001"></a>
+<a title="分享到飞信" href="#" class="bds_fx" data-cmd="fx" id="fx"></a>
+<a title="分享到豆瓣网" href="#" class="bds_douban" data-cmd="douban" id="douban"></a>
+<a title="分享到一键分享" href="#" class="bds_mshare" data-cmd="mshare" id="mshare"></a></div>
+
+<script>
+      window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} };
+	  with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+</script>
+<script type="text/javascript">
+	function copy() { document.getElementById("copy").click(); } 
+	function mail() { document.getElementById("mail").click(); } 
+	function qzone() { document.getElementById("qzone").click(); } 
+	function tsina() { document.getElementById("tsina").click(); } 
+	function tqq() { document.getElementById("tqq").click(); } 
+	function weixin() { document.getElementById("weixin").click(); }
+	function renren() { document.getElementById("renren").click(); } 
+	function tsohu() { document.getElementById("tsohu").click(); } 
+	function sqq() { document.getElementById("sqq").click(); }
+	function kaixin001() { document.getElementById("kaixin001").click(); } 
+	function fx() { document.getElementById("fx").click(); }
+	function douban() { document.getElementById("douban").click(); }
+	function mshare() { document.getElementById("mshare").click(); }
+</script>
