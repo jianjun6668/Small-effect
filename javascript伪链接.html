@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript伪链接</title>
+</head>
+<body>
+    <div id="div">
+        
+    </div>
+    <a href="javascript:get()">替罪羊</a>
+    <script>
+        var oDiv=document.getElementById('div');
+        oDiv.onclick=function(){
+            alert('我是div身上的函数')
+        }
+        //将函数传给a标签
+        function get(){
+            oDiv.click();
+        }
+        //此东西是非常有用的，比如你用一个插件想用，他加在固定样式上的事件，可以这样转换过来
+    </script>
+</body>
+</html>
