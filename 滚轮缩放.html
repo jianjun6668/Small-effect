@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一个图片滚轮放大缩小的demo</title>
+</head>
+<body>
+<img id="bigImg" src="img/banner1.png" alt="">
+<script>
+    window.onload = function () {
+
+        var oDiv = document.getElementById('bigImg');
+        changpos();
+        function changpos(){
+            oDiv.style.position="fixed";
+            oDiv.style.left='50%';
+            oDiv.style.top="50%";
+            oDiv.style.marginLeft=-(oDiv.clientWidth/2)+'px';
+            oDiv.style.marginTop=-(oDiv.clientHeight/2)+'px';
+        }
+
+        function onMouseWheel(ev) {/*当鼠标滚轮事件发生时，执行一些操作*/
+            var ev = ev || window.event;
+            var down = true; // 定义一个标志，当滚轮向下滚时，执行一些操作
+            down = ev.wheelDelta?ev.wheelDelta<0:ev.detail>0;
+            if(down){
+                oDiv.style.height = oDiv.offsetHeight-10+'px';
+                changpos();
+            }else{
+                oDiv.style.height = oDiv.offsetHeight+10+'px';
+                changpos();
+            }
+            if(ev.preventDefault){/*FF 和 Chrome*/
+                ev.preventDefault();// 阻止默认事件
+            }
+            return false;
+        }
+        addEvent(oDiv,'mousewheel',onMouseWheel);
+        addEvent(oDiv,'DOMMouseScroll',onMouseWheel);
+    };
+
+    function addEvent(obj,xEvent,fn) {
+        if(obj.attachEvent){
+            obj.attachEvent('on'+xEvent,fn);
+        }else{
+            obj.addEventListener(xEvent,fn,false);
+        }
+    }
+</script>
+</body>
+</html>
